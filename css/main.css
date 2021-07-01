@@ -161,6 +161,7 @@ section h1, h2 {
 }
 
 .second-section {
+    margin-top: 20px;
     background-color: aliceblue;
     width: 100%;
 }
@@ -168,36 +169,77 @@ section h1, h2 {
 .card__holder {
     display: flex;
     flex-direction: row;
-    margin-top: 175px;
+    justify-content: space-around;
 }
 
-.photo {
-    position: relative;
-    bottom: 190px;
-    margin: 0px 32px 0 32px;
+.card {
+    margin: 20px;
 }
 
-.photo img {
-    position: relative;
+.card__title {
+    text-align: center;
+    font-size: 24px;
+    line-height: 30px;
 }
 
-.photo__text {
-    position: absolute;
-    width: 262px;
-    height: 261px;
+.card__btn {
+    margin-left: 39px;
+    width: 188px;
+    height: 42px;
+    border: none;
+    outline: none;
+    background-color: #97b621;
     color: #fff;
-    visibility: hidden;
+    font-size: 13px;
+    line-height: 22px;
+    border-radius: 32px;
+}
+
+.card__photo {
+    position: relative;
+    display: block;
+    background-size: cover;
+    width: 262px;
+    height: 262px;
+}
+
+.card1 {
+    text-align: center;
+    background: url('../image/image-hover1.jpg');
+}
+
+.card2 {
+    background: url('../image/image-hover2.jpg');
+}
+
+.card3 {
+    background: url('../image/image-hover3.jpg');
+}
+
+.card4 {
+    background: url('../image/image-hover4.jpg');
+}
+
+.card__text {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    margin: 0%;
     font-size: 18px;
     line-height: 35px;
     background-color: rgba(21,51,68,0.6);
-    transition: all .3s ease-in-out;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
 }
 
-.photo__text:hover {
-    visibility: visible;
+.card__text p {
+    position: relative;
+    top: 7%;
+    padding: 20%;
 }
 
-.photo__text p {
-    padding: 20% 20% 0 20%;
-    text-align: center;
+.card__text:hover {
+    opacity: 1;
 }
