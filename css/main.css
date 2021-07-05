@@ -10,6 +10,15 @@ button, h1, h2, h3 {
     color: #7ea2b3;
 }
 
+.button {
+    transition: background-color .3s ease-in-out;
+}
+
+.button:hover {
+    background-color: green;
+    cursor: pointer;
+}
+
 .conteiner {
     padding-top: 17px;
     padding-left: 84px;
@@ -75,6 +84,7 @@ section h1, h2 {
     flex-direction: row;
     position: relative;
     margin-bottom: 120px;
+    margin-left: 40px;
 }
 
 .section--reverse {
@@ -145,6 +155,12 @@ section h1, h2 {
     font-size: 16px;
     line-height: 22px;
     border-radius: 33px;
+    transition: all .3s ease-in-out;
+}
+
+.section__end:hover {
+    color: #fff;
+    background-color: #97b621;
 }
 
 .section__btn {
